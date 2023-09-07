@@ -9,7 +9,7 @@ int num2 = num % 10; // 94 % 10 = 4 - делим на модуль, получа
 
 if(num1 > num2)
 {
-    Console.WriteLine("наибольшая цифра: " + num1);//Console.WriteLine($" max = {num1}), где $ - это интерполятор строки для вывода числа
+    Console.WriteLine("наибольшая цифра: " + num1);//Console.WriteLine($" max = {num1}"), где $ - это интерполятор строки для вывода числа
 }
 else
 {
