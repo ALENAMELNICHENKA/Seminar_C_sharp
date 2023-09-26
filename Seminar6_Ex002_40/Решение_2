@@ -1,0 +1,25 @@
+int GetNumber(string message)
+{
+    System.Console.Write(message);
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+
+//Проверяем через булеву операцию и оператор && (ИЛИ) правду или ложь
+bool GetStorTreyg(int a1, int a2, int a3)
+{
+    return(a1 + a2 > a3) && (a2 + a3 > a1) && (a1 + a3 > a2);
+}
+
+int num1 = GetNumber("Введите число 1 -> ");
+int num2 = GetNumber("Введите число 2 -> ");
+int num3 = GetNumber("Введите число 3 -> ");
+
+if (GetStorTreyg(num1, num2, num3))
+{
+    Console.WriteLine("Треугольник существует ");
+}
+else
+{
+    Console.WriteLine("Треугольник не существует ");
+}
