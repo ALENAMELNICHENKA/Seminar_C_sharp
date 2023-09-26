@@ -13,4 +13,18 @@ int[] FillArray(int size, int min, int max)
 }
 
 int[] array = FillArray(5, 10, 20);
-System.Console.WriteLine();
+Console.WriteLine(string.Join(" ", array));
+
+int[] CopyArray(int[] array)
+{
+    int[] arrayCopy = new int[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        arrayCopy[i] = array[i];
+    }
+    
+    return arrayCopy;
+}
+
+int[] arrayCopy = CopyArray(array);
+Console.WriteLine(string.Join(" ", arrayCopy));
