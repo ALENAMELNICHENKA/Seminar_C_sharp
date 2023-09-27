@@ -23,7 +23,6 @@ int[] Convertation(int number)
 }
 
 Console.WriteLine();
-
 int number = GetNumber();
 string print = string.Join(", ", Convertation(number)); /* string.Join принимает 2 параметра:
                                                         1 - это разделитель(сепаратор), 2 - массив*/
